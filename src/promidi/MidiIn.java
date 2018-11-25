@@ -142,7 +142,7 @@ class MidiIn{
 					}
 				);
 		}catch (Exception e){
-			System.err.println("Disabling controller() for " + promidiContext.parent.getName() + " because of an error.");
+			System.err.println("Disabling controller() because of an error.");
 			e.printStackTrace();
 			promidiContext.controllerMethod = null;
 		}
@@ -174,7 +174,7 @@ class MidiIn{
 					}
 				);
 		}catch (Exception e){
-			System.err.println("Disabling noteOn() for " + promidiContext.parent.getName() + " because of an error.");
+			System.err.println("Disabling noteOn() because of an error.");
 			e.printStackTrace();
 			promidiContext.noteOnMethod = null;
 		}
@@ -207,7 +207,7 @@ class MidiIn{
 					}
 				);		
 		}catch (Exception e){
-			System.err.println("Disabling noteOff() for " + promidiContext.parent.getName() + " because of an error.");
+			System.err.println("Disabling noteOff() because of an error.");
 			e.printStackTrace();
 			promidiContext.noteOffMethod = null;
 		}
@@ -237,7 +237,7 @@ class MidiIn{
 					}
 				);
 		}catch (Exception e){
-			System.err.println("Disabling programChange() for " + promidiContext.parent.getName() + " because of an error.");
+			System.err.println("Disabling programChange() because of an error.");
 			e.printStackTrace();
 			promidiContext.programChangeMethod = null;
 		}

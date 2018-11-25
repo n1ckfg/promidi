@@ -97,7 +97,7 @@ public class MidiIO{
 	 */
 	private MidiIO(processing.core.PApplet parent){
 		this.parent = parent;
-		parent.registerDispose(this);
+		//parent.registerDispose(this);
 
 		try{
 			noteOnMethod = parent.getClass().getMethod("noteOn", new Class[] {Note.class,Integer.TYPE,Integer.TYPE});
